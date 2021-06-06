@@ -28,5 +28,21 @@
 
 **`git revert HEAD`** : It removes all the changes of the previous commit and creates a new commit. Use **<commit_id>** inplace of **HEAD** to rollback to the specified commit.
 
+### Branching and Merging
+
+**`git branch`** : Displays all branches of the repo.
+
+**`git branch <new_branch_name>`** : Creates new branch with **<new_branch_name>**. Use **-d** flag to delete the branch which already exists. **-D** deletes the branch forcefully.
+
+**`git checkout <branch_name>`** : Switches to **<branch_name>**.
+
+**`git checkout -b <new_branch_name>`** : Create and switches to new branch **<new_branch_name>**
+
+**`git merge <branch_to_be_merged>`** : It merges the **<branch_to_be_merged>** to the current branch.
+
+**`git merge --abort`** : Aborts the current merging process.
+
+**`git log --graph --oneline`**: shows the log history of the tree in the form of graph.
+
 #### References
 [Common gitignore patterns](https://gist.github.com/octocat/9257657)
