@@ -54,5 +54,13 @@
 
 **`git config --global credential.helper cache`** : Provides a 15 minute where password will be asked only once.
 
+### Using a Remote Repository
+
+**`git remote -v`** : Display info about the remote repo like aliases.
+
+**`git remote show origin`** : Displays detailed info of the origin.
+
+**`git fetch`** : Fetches remote updates to local repo.
+
 #### References
 [Common gitignore patterns](https://gist.github.com/octocat/9257657)
