@@ -1,3 +1,8 @@
+## Tips
+
+- Always pull the branch before applying merge on to it.
+- Follow **Pull -> Merge -> Push** flow.
+
 ## Week 2
 
 ### Advanced Git Interaction
@@ -62,5 +67,17 @@
 
 **`git fetch`** : Fetches remote updates to local repo.
 
+### Solving Conflicts:
+
+**`git push -u origin <branch_name>`** : Updates the branch from local to rempote repo, -u stands for upstream.
+
+**`git rebase <base_branch_name>`** : Uses **<base_branch_name>** as base for current branch. Mostly will be master to update all changes of current branch on top of master while having linear history of commit.
+
+**`git push --delete origin <branch name>`** : Deletes the remote branch from the remote repo.
+
+**`git rebase --continue`** : Have to be used when merge conflict is solved while rebasing.
+
 #### References
 [Common gitignore patterns](https://gist.github.com/octocat/9257657)
+[Merge conflicts](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
+[Resolving Merge Conflicts Using CLI](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line)
