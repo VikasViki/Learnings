@@ -44,5 +44,15 @@
 
 **`git log --graph --oneline`**: shows the log history of the tree in the form of graph.
 
+## Week 3
+
+### Introduction to Github
+
+**`git push`** : Pushes all the snapshots of the project to remote repository.
+
+**`git pull`** : Fetches the latest code of the repo from remote to local.
+
+**`git config --global credential.helper cache`** : Provides a 15 minute where password will be asked only once.
+
 #### References
 [Common gitignore patterns](https://gist.github.com/octocat/9257657)
