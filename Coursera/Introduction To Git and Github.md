@@ -77,7 +77,28 @@
 
 **`git rebase --continue`** : Have to be used when merge conflict is solved while rebasing.
 
+## Week 4
+
+### Code Reviews
+
+- [Styleguide](http://google.github.io/styleguide/)
+- [Pull Request reviews](https://help.github.com/en/articles/about-pull-request-reviews)
+- [Perfect Code Review](https://medium.com/osedea/the-perfect-code-review-process-845e6ba5c31)
+- [What is Code Review?](https://smartbear.com/learn/code-review/what-is-code-review/)
+
+### Managing Projects
+
+- [DIY](https://arp242.net/diy.html )
+- [Closing issues using keywords](https://help.github.com/en/articles/closing-issues-using-keywords)
+- [Setting guidlines for contributors](https://help.github.com/en/articles/setting-guidelines-for-repository-contributors)
+- [What is CI/CD?](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html)
+- [Imoprtant in CI/CD](https://stackify.com/what-is-cicd-whats-important-and-how-to-get-it-right/)
+- [CI tutorial](https://docs.travis-ci.com/user/tutorial/)
+- [CI build stages](https://docs.travis-ci.com/user/build-stages/)
+
 #### References
-[Common gitignore patterns](https://gist.github.com/octocat/9257657)
-[Merge conflicts](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
-[Resolving Merge Conflicts Using CLI](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line)
+- [Common gitignore patterns](https://gist.github.com/octocat/9257657)
+
+- [Merge conflicts](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
+
+- [Resolving Merge Conflicts Using CLI](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line)
