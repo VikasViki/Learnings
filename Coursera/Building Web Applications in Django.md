@@ -47,3 +47,19 @@ render(request, template, context)
 ```
 - The above render function will allow to use context inside the template.
 - To include templates inside namespace, place the template html inside ***`templates/<app_name>`*** directory.
+
+## Django Template Language
+
+- It does internal escaping on the elements, i.e JS code will not get executed if passed as context to HTML.
+- ***`{{ ele }}`*** : substitution of value. modifiers like **safe, inttocomma** can be used after `|` in the block.
+- ***`{% for ele in list %}`*** : code, logic, blocks
+
+## Template Inheritance
+
+- ***`{% extends '<template_name> '%}`*** extenind a base template into a new template.
+
+## URL Mapping / Reversing
+
+- ***`"{% url '<app_name>:<view_name>' <id_param> %}"`*** : this provides functionality for url reversing, The **view name** has to be specified as **name** paramter inside the **url()** function
+- can use **namespace** param to refer to an app inside project. This namespace has to be used inside ***`urls.py`**** of the django project only.
+- In order to use the url name mappings inside python files pass them as arguments to **reverse()** and **reverse_lazy()** functions imported from **django.urls**.
