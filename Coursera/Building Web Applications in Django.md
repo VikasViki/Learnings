@@ -70,3 +70,11 @@ render(request, template, context)
 - Object get destroyed when point of reference for the given variable name changes.
 - model name can be extracted by ***`<model_object>._meta.verbose_name`***
 - ***`from django.views import generic`*** **generic.ListView** class can be extend inside a view class to make the class view as generic, but require to pass the model inside **`model`** variable.
+
+## Week 4 : Forms in HTTP and HTML
+
+- **POST** is used when data is created or modified. **GET** is used for searching and reading data. **GET** should be idempotent.
+- **name** attribute of the forms acts as **key** inside the request.
+- Without **csrf** handling, if a post form is requested django throw **403:Request Forbideen** status code.
+- ***`{% csrf_token %}`*** this template tag creates the boiler html code for CSRF token to be sent to the server when the form is submitted.
+- In order to prevent executing the same operation twice, its cautious to **redirect** the response to **POST** to a **GET** request i.e ***POST redirect GET refresh***
