@@ -23,7 +23,7 @@ Methods of ***`model.objects`*** : ***`values(), filter(), update(), delete().`*
 - ***`migrate`*** : reads all migrations folder from the apps and creates table in database as per migration files.
 - Tables are created with ***`<app_name>_<model_name>`*** nomenclature inside the database when migrate command is executed.
 
-## Week 2: URL Routing
+## Week 2: Django Views
 
 - To design URL's you can create URLconf module which is pure python code and is mapping between URL path expressions to python functions i.e views.
 ```python
@@ -56,10 +56,17 @@ render(request, template, context)
 
 ## Template Inheritance
 
-- ***`{% extends '<template_name> '%}`*** extenind a base template into a new template.
+- ***`{% extends '<template_name> '%}`*** extends a base template into a new template.
 
 ## URL Mapping / Reversing
 
 - ***`"{% url '<app_name>:<view_name>' <id_param> %}"`*** : this provides functionality for url reversing, The **view name** has to be specified as **name** paramter inside the **url()** function
 - can use **namespace** param to refer to an app inside project. This namespace has to be used inside ***`urls.py`**** of the django project only.
 - In order to use the url name mappings inside python files pass them as arguments to **reverse()** and **reverse_lazy()** functions imported from **django.urls**.
+
+## Week 3 : Django Generic Views
+
+- ***`__init__`*** is constructor method and ***`__del__`*** is destructor method.
+- Object get destroyed when point of reference for the given variable name changes.
+- model name can be extracted by ***`<model_object>._meta.verbose_name`***
+- ***`from django.views import generic`*** **generic.ListView** class can be extend inside a view class to make the class view as generic, but require to pass the model inside **`model`** variable.
