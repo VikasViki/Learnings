@@ -37,10 +37,6 @@
   - ***There must be no transitive functional dependency (TFD)***
   - ***TFD:*** Every non-key attribute must be dependent on the primary key only. i.e ***(A -> B -> C)***
 
-## Design Considerations
-
-- 
-
 ## References
 
 - [Lucid Chart](https://www.lucidchart.com/) - Drawing tool.
