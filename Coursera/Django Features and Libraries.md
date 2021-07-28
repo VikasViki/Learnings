@@ -11,3 +11,8 @@
 ***```{% url '<url_name>' %}?next={% url '<url_name>' %}```***
 - ***LoginRequiredMixin*** class allows views to be accessed only by loggedin users.
 ***`from django.contrib.auth.mixins import LoginRequiredMixin`*** 
+
+## Week 3 : Django Forms
+
+- Form values can be prefilled by passing a dictionary with model fields as keys and input values as values to Form class.
+- ***validators*** parameters takes list of validation to be applied to a particular field of the model.
