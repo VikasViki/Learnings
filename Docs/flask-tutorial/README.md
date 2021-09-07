@@ -21,6 +21,13 @@ flask run
 - ***session*** is a dict that stores data across requests. Flask securely signs the data so that it can't be tampered.
 - ***`<blueprint>.before_app_request()`*** registers function that runs before the view functions for subsequent requests.
 
+## Templates
+
+- ***`{{ expression }}`*** expression will be the final output to the document. ***`{% if/for %}`*** is used for defining control flows.
+- ***g and url_for()*** is automatically available inside templates.
+- ***get_flashed_messages()*** stores all the messages used inside ***flash()*** function.
+- The templates for a blueprint will be placed in a directory with the same name as the blueprint. i.e ***flask_app/templates/<blueprint_name>/template_file.html***
+
 <br>
 
 **Reference:** https://flask.palletsprojects.com/en/2.0.x/tutorial/
