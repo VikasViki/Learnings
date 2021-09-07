@@ -31,6 +31,12 @@ flask run
 ## Static Files
 
 - Flask automatically adds a static view that takes path to ***flask_app/static*** directory. It can be called using ***`url_for('static', file_name='<static_file>')`***
+
+## Blog Blueprint
+
+- ***loop.last*** is a special variable inside jinja that returns a boolean based on whether current loop iteration is last or not.
+- ***`app.add_url_rule()`*** associates the endpoint with specified view in parameters. i.e 2 different endpoints can point to same view function.
+
 <br>
 
 **Reference:** https://flask.palletsprojects.com/en/2.0.x/tutorial/
