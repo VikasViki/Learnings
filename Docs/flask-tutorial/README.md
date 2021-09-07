@@ -28,6 +28,9 @@ flask run
 - ***get_flashed_messages()*** stores all the messages used inside ***flash()*** function.
 - The templates for a blueprint will be placed in a directory with the same name as the blueprint. i.e ***flask_app/templates/<blueprint_name>/template_file.html***
 
+## Static Files
+
+- Flask automatically adds a static view that takes path to ***flask_app/static*** directory. It can be called using ***`url_for('static', file_name='<static_file>')`***
 <br>
 
 **Reference:** https://flask.palletsprojects.com/en/2.0.x/tutorial/
