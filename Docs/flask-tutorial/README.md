@@ -37,6 +37,15 @@ flask run
 - ***loop.last*** is a special variable inside jinja that returns a boolean based on whether current loop iteration is last or not.
 - ***`app.add_url_rule()`*** associates the endpoint with specified view in parameters. i.e 2 different endpoints can point to same view function.
 
+## Test Coverage
+
+- ***`tests`*** directory has to be created along side the ***flask app*** to contain all test files.
+- ***conftest.py*** will hold all fixtures that each test function can use.
+- Each test will create a new temporary database file and populate some data that will be used in the tests.
+- Pytest uses fixtures by matching their function names with the names of the arguments in the test functions.
+- Pytest has its own ***monkeypatch*** fixture that is used to override the behaviour of the function with different function using the ***`monkeypatch.setattr('<actual_function_name>', <dummy_function_name>)`*** method.
+- Using ***client*** in a ***with*** block allows accessing context variables such as ***sessions*** after the response is returned, which would normally will throw an error.
+
 <br>
 
 **Reference:** https://flask.palletsprojects.com/en/2.0.x/tutorial/
