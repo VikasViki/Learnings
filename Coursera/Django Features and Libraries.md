@@ -16,3 +16,8 @@
 
 - Form values can be prefilled by passing a dictionary with model fields as keys and input values as values to Form class.
 - ***validators*** parameters takes list of validation to be applied to a particular field of the model.
+
+## Week 5 : Owned Rows
+
+- Crispy forms styles the form using internal css. Add ***`{% load crispy_form_tags %}`*** on top of the form elements inside html file and add escape while rendering the form data using ***`{{ form| crispy }}`***
+- ***crispy_forms*** app need to be present inside ***INSTALLED_APPS***
