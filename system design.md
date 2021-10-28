@@ -20,6 +20,16 @@
    - **Write-Back Cache:** In this cache, when there is an edit in the database, the server only updates the cache and not the db. Db synchronization cache happens asynchronously. This method has a drawback of losing data if cache eviction happens before updating the db.
      - **Eviction Policies:** Least recently used, Least frequently, Last In First Out (queue).
 
-  - **NOTES:**
-    - **Block Size is the unit of data exchange between cache and main memory.**
-    - **Data and Instructions that are being used frequently are stored in Block.**
+### ***Peer to Peer Network***
+  - In this network, every computer acts as peer/server to other nodes in the network.
+  - **Types of P2P**
+    - **Unstructured P2P:** Work load is shared equally, nodes are connected randomly, difficult to find data, easily built.
+    - **Structured P2P:** Data is accessed easily, difficult to set up due to creation of virtual layer.
+    - **Hybrid P2P:** Combination of P2P and client-server architecture. This network has a central server and each node can work independently as well.
+
+
+<br>
+
+- **NOTES:**
+  - **Block Size is the unit of data exchange between cache and main memory.**
+  - **Data and Instructions that are being used frequently are stored in Block.**
