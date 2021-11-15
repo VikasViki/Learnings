@@ -27,7 +27,16 @@
     - **Structured P2P:** Data is accessed easily, difficult to set up due to creation of virtual layer.
     - **Hybrid P2P:** Combination of P2P and client-server architecture. This network has a central server and each node can work independently as well.
 
-
+### ***Proxies***
+  - Proxy are servers which acts as bridge between the clients and servers. **Proxy chaining** involves forwarding traffic from one proxy to another.
+  - There are two types of proxy servers.
+    - **Forward proxy:** Proxy server is at client side. 
+    - **Reverse proxy:** Proxy server is at server side.
+  - **Purpose of Proxy Server:**
+    - Gain admittance to blocked/unallowed assets
+    - Improved security
+    - Improved Data transfer speed
+    - Privacy Benefits
 <br>
 
 - **NOTES:**
