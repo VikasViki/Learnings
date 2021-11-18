@@ -37,6 +37,22 @@
     - Improved security
     - Improved Data transfer speed
     - Privacy Benefits
+
+### ***Replication and Redudancy***
+  - **Replication:** It is the technique of creating duplicate copies of the primary DB as the standby DB, which will be used when the main DB goes down. Both synchronous and asynchronous update happens on the db based on the use case.
+  - **Redudancy:** It is the duplication of critical components of the system with the intention of increasing reliability of the system, usually in the form of backup or to improve system performance.
+  - **Model of Redudancy:**
+    - **Standby/Backup Redudancy:** In this model a secondary system is present to take over the primary system in case of failure.
+       - **Types of standby:**
+         - **Hot standby:** Not in sync, will take time to bring everything online.
+         - **Cold Standy:** In sync and always ready which shortens downtime.
+    - **N Modular/Parallel Redudancy:** In this model multiple units are running in parallel and are in sync. It has a quick switchover time as compared to Hot standby.
+      - **Types of N modular redudancy;**
+        - **Double Modular Redudancy(DMR):** Uses 2 identical units
+        - **Triple Modular Redudancy(TMR):** Uses 3 identical units
+        - **Quadruple Modular Redudancy(QMR):** Uses 4 identical units
+    - **1:N Redudancy Technique:** It is the most efficient redudancy technique since the cost is much lower as compared to other designs. It has only single backup which serves as backup for other systems. The disadvantag of this methodolgy are the additional complexities of choosing when to switch framework.
+
 <br>
 
 - **NOTES:**
