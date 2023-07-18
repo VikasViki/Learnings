@@ -23,3 +23,8 @@
 - Saga Pattern: Tackle Distributed Transactions with Confidence
 - Retry Pattern: Boost Your Microservices Resilience with Graceful Error Recovery
 - Backends for Frontends Pattern (BFF): Optimize User Experience with Tailored Service Aggregation
+
+![image](https://github.com/VikasViki/Learnings/assets/22794763/5fea3088-2764-4ae5-a977-a897b1fbd006)
+
+- Sidecar Pattern: Supercharge Your Microservices with Modular Functionality
+- Strangler Pattern: Transform Your Monolith into Microservices with Confidence
